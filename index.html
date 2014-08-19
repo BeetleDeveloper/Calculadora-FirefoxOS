@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/application.css" />
+    <script src="assets/js/jquery-1.9.1.js"></script>
+    <script src="assets/js/calculator.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body class="bg">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
+      <div class="container">
+         <div class="navbar-header">
+            <a class="navbar-toggle"> 
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+          <a class="navbar-brand" href="#">Calculadora</a>
+      </div>
+      <div id="slidemenu">
+        <ul class="nav navbar-nav">
+           <li><div class="span6">
+              <legend>Historial</legend>
+              <div id="calc-panel">
+                <div id="calc-history">
+                  <ol id="calc-history-list"></ol>
+              </div>
+          </div>
+      </div>
+      <hr></li>
+  </ul>  
+</div>
+</div>
+</div>
+<!--wrap the page content do not style this-->
+<div id="page-content">
+    <div class="container">
+      <div id="calculator-wrapper">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-xs-6 pand-right-not"> <div id="calculator-screen"  class="form-control bor-not " type="email" ></div></div>
+              <div class="col-xs-6 pand-left-not">     <div class="input-group">
+                  <div id="calculator-result"  class="form-control bor-not " type="email" ></div>
+                  <span class="input-group-btn">
+                    <a data-method="reset" href="#" class="btn btn-danger bor-not">C</a></span>
+                </div></div>
+            </div>
+        </div> 
+    </div>
+    <div class="row-fluid">
+        <div class="panel panel-bg">
+          <div id="calc-board" >
+            <div class="row-fluid">
+             <div class="btn-group btn-group-justified ">
+                <a href="#" class="btn btn-primary bor-not bts-op" data-constant="COS">COS</a>
+                <a href="#" class="btn btn-primary bor-not bts-op" data-constant="MOD">MD</a>
+                <a href="#" class="btn btn-primary bor-not bts-op" data-constant="BRO">(</a>
+                 <a href="#" class="btn btn-primary bor-not bts-op" data-constant="BRC">)</a>
+                <a href="#" class="btn btn-primary bor-not bts-op" data-constant="PROC">%</a>
+            </div>
+        </div>
+        <div class="row-fluid">
+         <div class="btn-group btn-group-justified ">
+            <a href="#" class="btn btn-primary bor-not nm ">7</a>
+            <a href="#" class="btn btn-primary bor-not nm ">8</a>
+            <a href="#" class="btn btn-primary bor-not nm ">9</a>
+            <a href="#" class="btn btn-danger bor-not nm obtn" data-constant="DIV">/</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="btn-group btn-group-justified">
+            <a href="#" class="btn btn-primary bor-not nm ">4</a>
+            <a href="#" class="btn btn-primary bor-not nm ">5</a>
+            <a href="#" class="btn btn-primary bor-not nm ">6</a>
+            <a href="#" class="btn btn-danger bor-not nm obtn" data-constant="MIN">-</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="btn-group btn-group-justified">
+            <a href="#" class="btn btn-primary bor-not nm ">1</a>
+            <a href="#" class="btn btn-primary bor-not nm ">2</a>
+            <a href="#" class="btn btn-primary bor-not nm ">3</a>
+            <a href="#" class="btn btn-danger bor-not nm obtn" data-constant="SUM">+</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-primary bor-not nm">.</a>
+        <a href="#" class="btn btn-primary bor-not nm">0</a>
+          <a href="#" class="btn btn-primary bor-not nm btnresul" data-method="calculate">=</a>
+        <a href="#" class="btn btn-danger bor-not nm obtn" data-constant="MULT">*</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /#page-content -->
+</body>
+</html>

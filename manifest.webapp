@@ -1,0 +1,12 @@
+{
+"name": "Calculadora",
+"icons": {
+        "128": "/icons/calculadora_128.png", 
+        "120": "/icons/calculadora_120.png", 
+        "90": "/icons/calculadora_90.png", 
+        "60": "/icons/calculadora_60.png"
+    }, 
+"version": "0.5",
+"launch_path": "/index.html",
+"release_notes": "Calculadora para Firefox OS",
+"developer": {"name": "BeetleDeveloper"}}
